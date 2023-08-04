@@ -1,0 +1,24 @@
+//* Window Witdh ################# */
+$max-width: 768; // PC/SPのブレイクポイント
+$min-width: 375; // スマホの画面幅
+
+//* Media Query ################# */
+$xs: 374px;
+$s: 768px;
+$m: 769px;
+$l: 1024px;
+$xl: 1400px;
+
+//* Font ################# */
+$base-font-size: 16;
+$default_fonts: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "游ゴシック", "Yu Gothic", "YuGothic", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif;
+
+//* Colors ################# */
+$base_font_color: #333;
+
+//* z-index ################# */
+$z-header: 100;
+$z-gnavi: 3;
+$z-hamburger: 1;
+$z-footer: 1;
+$z-floatingButton: 2;

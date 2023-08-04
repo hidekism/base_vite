@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "string-quotes": "double",
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null
+  }
+}

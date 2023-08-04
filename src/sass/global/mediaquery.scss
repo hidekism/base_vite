@@ -1,0 +1,19 @@
+@use "variables" as *;
+@use "utility" as *;
+
+// メディアクエリ設定
+// 引数にサイズを指定するとそのメディアクエリを出力する
+// 引数に custom と第二引数
+$breakpoints: (
+  "xs": "screen and (max-width: #{$xs})", // XSサイズ 例）320幅用
+  "s": "screen and (max-width: #{$s})",   // Sサイズ 例）〜768px用
+  "m": "screen and (min-width: #{$m})",   // Mサイズ 例）768px〜用
+  "l": "screen and (min-width: #{$l})",   // Lサイズ 例）1024px〜用
+  "xl": "screen and (min-width: #{$xl})"  // XLサイズ 例）1200px〜用
+) !default;
+@mixin mediaQuery($breakpoint: m, $custom: "") {
+  $query: if($breakpoint == "custom", $custom, #{map-get($breakpoints, $breakpoint)});
+  @media #{$query} {
+    @content;
+  }
+}

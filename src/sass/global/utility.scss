@@ -1,0 +1,7 @@
+@use "sass:math";
+@use "variables" as *;
+
+// 除算
+@function div($value1, $value2) {
+  @return math.div($value1, $value2);
+}

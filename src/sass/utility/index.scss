@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.u-spbr {
+  display: inline;
+
+  @include mediaQuery {
+    display: none;
+  }
+}
+
+.u-pcbr {
+  display: none;
+
+  @include mediaQuery {
+    display: inline;
+  }
+}
